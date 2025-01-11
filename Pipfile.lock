@@ -1,0 +1,25 @@
+{
+    "_meta": {
+        "hash": {
+            "sha256": "90e7b84fd967faed53fb6773d424cbf022ecc2e4cd947e78b9e0dec8e4844571"
+        },
+        "pipfile-spec": 6,
+        "requires": {
+            "python_version": "3.9"
+        },
+        "sources": [
+            {
+                "name": "pypi",
+                "url": "https://pypi.org/simple",
+                "verify_ssl": true
+            }
+        ]
+    },
+    "default": {
+        "gameplay": {
+            "editable": true,
+            "file": "."
+        }
+    },
+    "develop": {}
+}
