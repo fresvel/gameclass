@@ -4,19 +4,23 @@ from game.game_object import GameObject
 from game.movable_object import Direction
 from game.movable_object import MovableObject
 from game.movable_object import MovementDirection
-
+from game.ship import Ship
 
 def main():
-    print("Starting the game...!")
     go = GameObject(400, 200)
     print(go)
-    go.render()
-    print()
+
     mo = MovableObject(200,200,4,MovementDirection.Vertical)
     print(mo)
 
-    testing_movable_object()
+    ship = Ship(300,300,5,"Friend")
+    print(ship)
 
+    ship.handle_input(Direction.Left)
+    ship.fire()
+    ship.update(10)
+
+    print(ship)
 
 if __name__=='__main__':
     print("Init as main")
