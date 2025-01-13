@@ -108,10 +108,10 @@ print(ship)  # Imprime: Ship Friend GameObject at 250,300, Moving Horizontal Lef
 
 
 Para correr el programa ejecute desde la ruta del proyecto `gameplay`
-
+```
 ## Salida Esperada
 
-```plaintext
+```bash
 (gameclass) [fresvel@gns3 gameclass]$ code .
 (gameclass) [fresvel@gns3 gameclass]$ gameplay 
 GameObject at 400,200
