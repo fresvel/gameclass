@@ -6,26 +6,6 @@ from game.movable_object import MovableObject
 from game.movable_object import MovementDirection
 from game.ship import Ship
 
-def main():
-    go = GameObject(400, 200)
-    print(go)
-
-    mo = MovableObject(200,200,4,MovementDirection.Vertical)
-    print(mo)
-
-    ship = Ship(300,300,5,"Friend")
-    print(ship)
-
-    ship.handle_input(Direction.Left)
-    ship.fire()
-    ship.update(10)
-
-    print(ship)
-
-if __name__=='__main__':
-    print("Init as main")
-    sys.exit(main())
-
 
 def testing_movable_object():
     hobj=MovableObject(400,200,4,MovementDirection.Horizontal)
@@ -52,3 +32,28 @@ def testing_movable_object():
     vobj.update(1)
     vobj.handle_input(Direction.Down)
     vobj.update(1)
+
+    
+def main():
+    go = GameObject(400, 200)
+    print(go)
+
+    mo = MovableObject(200,200,4,MovementDirection.Vertical)
+    print(mo)
+
+    ship = Ship(300,300,5,"Friend")
+    print(ship)
+
+    ship.handle_input(Direction.Left)
+    ship.fire()
+    ship.update(10)
+
+    print(ship)
+
+    testing_movable_object()
+
+if __name__=='__main__':
+    print("Init as main")
+    sys.exit(main())
+
+
